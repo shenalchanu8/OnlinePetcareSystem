@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+
+        <title>Pet Rejister</title>
+        <link rel = "Stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel = "Stylesheet" href = "css/style.css">
+        <link rel = "Stylesheet" href = "src/style2.css">
+        
+
+        <style>
+           * {
+        margin:0;
+        padding:0;
+        box_sizing:border-box;
+        font-family:'Poppins',sans-serif;
+            }
+
+            body{
+                background:lightblue;
+            }
+    
+    
+    
+    .background
+    {
+        width: 100%;
+        height: 100vh;
+        background: url(image1/pet3.jpg)no-repeat;
+        background-size: cover;
+        filter: blur(10px);
+    }
+    .container
+    {
+        position: absolute;
+        top: 70%;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 1000px;
+        background: url(image1/pet3.jpg)no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        
+        
+    }
+    
+        .container .content{
+            position: absolute;
+            top: 0;
+            left: 0%;
+            width: 58%;
+            height: 85%;
+            background: transparent;
+            padding: 80px;
+            color:darkblue;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            
+        }
+        .content .rej
+        {
+            font-size: 90px;
+            color: rgb(6, 6, 62);
+        }
+        .text-sci img{
+      
+      border-radius: 10%;
+      display: block;
+      width: 40%;
+      height: 50%;
+      margin-top: 1%;
+      margin-right: 0;
+      margin-left: 0;
+    
+    }
+        .text-sci h2{
+            font-size: 90px;
+            line-height: 1;
+            font-weight: 800;
+            
+        }
+        .text-sci h2 span{
+            font-size: 40px;
+            font-style: italic;
+        }
+        .text-sci p{
+            font-size: 30px;
+            font-weight: 500;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        
+        }
+    
+    
+        .social-icon a i{
+            font-size: 22px;
+            color: darkblue;
+            margin-right: 10px;
+            transition: .5s ease;
+    
+        }
+        .social-icon a :hover i{
+            transform: scale(1.2);
+        }
+    
+        .container .logreg-box
+        {
+        position: absolute;
+            top: 5%;
+            right: 0;
+            width: 42%;
+            height: 95.0%;
+           
+            
+    
+        }
+        .logreg-box .form-box
+        {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: top;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            backdrop-filter: blur(20px);
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            
+        
+        }
+        .logreg-box .form-box .register{
+            transform: translateX(500px);
+    
+        }
+    
+    
+    
+    
+        .form-box h2{
+            font-size: 40px;
+            text-align: center;
+        }
+        .form-box .input-box
+        {
+            position: relative;
+            width: 500px;
+            height: 100px;
+            border-bottom: 2px solid #e4e4e4;
+            margin: 30px 0;
+        }
+        .input-box input 
+        {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: 30px;
+            color: #e4e4e4;
+            font-weight: 800;
+            padding-right: 20%;
+    
+        }
+        .input-box label
+    {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        font-size: 30px;
+        font-weight: 500;
+        pointer-events: none;
+        transition:.5s ease;
+    }
+    
+    .input-box input:focus~label,
+    .input-box input:valid~label
+    {
+        top: -5px;
+    }
+    
+    .input-box .icon
+    {
+        position: absolute;
+        top: 13px;
+        right: 0;
+        font-size: 19px;
+    }
+    .form-box .remember-forgot
+    {
+        font-size: 20.5px;
+        font-weight: 500;
+        margin: -15px 0 15px;
+        display:flex ;
+        justify-content: space-between;
+    }
+    .remember-forgot label input
+    {
+        color: #e4e4e4;
+        text-decoration: none;
+    }
+    .remember-forgot a:hover{
+        text-decoration:undeline;
+    }
+    .btn
+    {
+        width: 100%;
+        height: 100px;
+        background: lightblue;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 25px;
+        color: #e4e4e4;
+        font-weight: 800;
+        
+        box-shadow: 0 0 10px rgba(0,0,0,.5);
+    }
+
+    .logreg-box .form-box .login-register p
+    {
+        font-size: 140%;
+        font-weight: 500;
+    }
+
+
+</style>    
+
+       
+    </head>
+<body>
+<section class="header">
+    <img src="image1/image0 (2).jpeg" width="100px" height="100px">
+    <a herf="#" class="logo"> </a>
+        
+
+        <nav class="navbar">
+       
+            <a href="index.html">Home</a>
+            <a href="cart.html">Store</a>
+            <a href="#">About Pet</a>
+            <a href="#">Loging</a>
+            <a href="rejisterpage.html">Rejister</a>
+            <a href="#">Why Us</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+    </section>
+
+    <div class="background"></div>
+    <div class="container">
+        
+
+        <div class="content">
+            <h2 class="rej"><i class='bx bxs-cat'></i> REGISTER NOW</h2>
+
+            <div class="text-sci">
+                <img src="image1/image0 (2).jpeg" width="200px" height="100px">
+                <br>
+                <h2>Welcome!<br><span> ONLINE PET CARE Website.</span></h2>
+                <br>
+                <br>
+                <p>sfugifferfgusfhvygssfkuefhsvdfhgvevkjbvudevkbvugerferbveugvervdverjvekbv
+                    jvbsdiuvkvgdfjvdfjvdjkvdkgudfjvdfkvdkfgvdfvdugvjrsjbrevjkdfvjbvj.
+                </p>
+
+                <div class="social-icon">
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-meta'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                </div>
+
+            </div>
+
+        </div>
+        
+
+        <div class="logreg-box">
+            <div class="form-box login">
+                <form action="#">
+                    <h2>Create Account</h2>   
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-user'></i></i></span>
+                        <input type="text" required>
+                        <label>User Name</label>
+                     </div><br>
+ 
+
+                     <div class="input-box">
+                        <span class="icon"><i class='bx bxl-gmail'></i></i></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                     </div><br>
+
+                     <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></i></span>
+                        <input type=" password" required>
+                        <label> password</label>
+                     </div><br>
+
+                     <div class="remember-forgot">
+                        <label><input type="checkbox">Agree to terms & conditions</label>
+                        <br>
+
+                        <a href="=#">Forgot password</a>
+                     </div>
+
+                     <button type="submit" class="btn">Create Account</button>
+
+                     <div class="login-register">
+                    <p>Already have Account? 
+                        <a href="#" class="register-link">Sign In</a>
+                    </p>
+
+                     </div>
+
+                </form>
+        </div>
+    
+</div>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+
+            <h3>quick link </h3>
+            <a href="#"><i  class="fas fa-angle-right"></i>Home</a>
+            <a href="#"><i  class="fas fa-angle-right"></i>Store</a>
+            <a href="#"><i  class="fas fa-angle-right"></i>About Pet</a>
+            <a href="#"><i  class="fas fa-angle-right"></i>menu</a>
+            <a href="#"><i  class="fas fa-angle-right"></i>product</a>
+            <a href="#"><i  class="fas fa-angle-right"></i>why us</a>
+        
+        </div>
+
+        <div class="box">
+
+            <h3>extra link </h3>
+            <a href="#"><i  class="fas fa-angle-right"></i>Ask question</a>
+            <a href="#"><i  class="fas fa-angle-right"></i>About Us</a>
+            <a href="#"><i  class="fas fa-angle-right"></i>Privacy Policy</a>
+            <a href="#"><i  class="fas fa-angle-right"></i>Terms User</a>
+        
+        </div>
+
+        <div class="box">
+
+            <h3>Contact Info </h3>
+            <a href="#"><i  class="fas fa-phone"></i>+122-675363563</a>
+            <a href="#"><i  class="fas fa-phone"></i>+111-435627827</a>
+            <a href="#"><i  class="fas fa-envelope"></i>shashika@gmail.com</a>
+            <a href="#"><i  class="fas fa-map"></i>mumbai,india - 400104</a>
+        
+        </div>
+
+        <div class="box">
+            <h3>Follow Us</h3>
+            <a href="#"><i class="fab fa-facebook"></i>facebook</a>
+            <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+            <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+
+
+        </div>
+
+    </div>
+
+    <div class="credit">Create By <span> Safe Paws</span> |all right reserved| </div>
+
+</section>
+
+
+    <!-- customer js file link -->
+    <script src="homepage java.js"> </script>
+</body>
+
+
+</html>
